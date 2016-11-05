@@ -7,15 +7,29 @@
 //
 
 import UIKit
+import Turbolinks
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let navigationController = UINavigationController()
+    
+    var session = Session()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // hide navigation bar
+        navigationController.setNavigationBarHidden(true, animated: false)
+        
+        // set the window and the nav controller as root
+        window = UIWindow()
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+        
+        // visit the initial website
+        startApplication()
+        
         return true
     }
 
@@ -40,7 +54,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
+    func startApplication() {
+        session.delegate = self
+//        visit(URL(string: "http://localhost:3000")!)
+        visit(URL(string: "http://progressions-coach.herokuapp.com/")!)
+    }
+    
+    func visit(_ url: URL) {
+        let visitableViewController = ViewController(url: url)
+        navigationController.pushViewController(visitableViewController, animated: true)
+        session.visit(visitableViewController)
+    }
 
 }
 
+extension AppDelegate: SessionDelegate {
+    func session(_ session: Session, didProposeVisitToURL url: URL, withAction action: Action) {
+        visit(url)
+    }
+    
+    func session(_ session: Session, didFailRequestForVisitable visitable: Visitable, withError error: NSError) {
+        let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        navigationController.present(alert, animated: true, completion: nil)
+    }
+}

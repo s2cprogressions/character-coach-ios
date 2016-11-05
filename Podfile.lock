@@ -1,0 +1,22 @@
+PODS:
+  - Turbolinks (1.0.2)
+
+DEPENDENCIES:
+  - Turbolinks (from `https://github.com/turbolinks/turbolinks-ios.git`, branch `swift-3.0`)
+
+EXTERNAL SOURCES:
+  Turbolinks:
+    :branch: swift-3.0
+    :git: https://github.com/turbolinks/turbolinks-ios.git
+
+CHECKOUT OPTIONS:
+  Turbolinks:
+    :commit: e24228dd447375a23f817d6c413ad4d3067fc95e
+    :git: https://github.com/turbolinks/turbolinks-ios.git
+
+SPEC CHECKSUMS:
+  Turbolinks: d8209bab43803adae8c06d434368e16479023407
+
+PODFILE CHECKSUM: 3fcb4cdd764d1a21ec0dd025bc5722ba5e120531
+
+COCOAPODS: 1.1.1
