@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         // hide navigation bar
-        navigationController.setNavigationBarHidden(true, animated: false)
+//        navigationController.setNavigationBarHidden(true, animated: false)
         
         // set the window and the nav controller as root
         window = UIWindow()
@@ -57,8 +57,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func startApplication() {
         session.delegate = self
-//        visit(URL(string: "http://localhost:3000")!)
-        visit(URL(string: "http://progressions-coach.herokuapp.com/")!)
+        visit(URL(string: "http://localhost:3000")!)
+//        visit(URL(string: "http://progressions-coach.herokuapp.com/")!)
     }
     
     func visit(_ url: URL) {
