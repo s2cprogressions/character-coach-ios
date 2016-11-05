@@ -57,7 +57,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func startApplication() {
         session.delegate = self
-        visit(URL(string: "http://localhost:3000")!)
+        visit(URL(string: "http://localhost:3000/app_entry_point")!)
 //        visit(URL(string: "http://progressions-coach.herokuapp.com/")!)
     }
     
