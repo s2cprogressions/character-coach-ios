@@ -66,12 +66,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigationController.pushViewController(visitableViewController, animated: true)
         session.visit(visitableViewController)
     }
-
+    
+    func backToHome() {
+        navigationController.popToRootViewController(animated: true)
+    }
 }
 
 extension AppDelegate: SessionDelegate {
     func session(_ session: Session, didProposeVisitToURL url: URL, withAction action: Action) {
-        visit(url)
+        // go back to home if we are visiting
+        if url.path == "/" {
+            backToHome()
+        }
+        else {
+            visit(url)
+        }
     }
     
     func session(_ session: Session, didFailRequestForVisitable visitable: Visitable, withError error: NSError) {
