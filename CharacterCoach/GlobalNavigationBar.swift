@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+// GlobalNavigationBar maintains the barTintColor when updated
 class GlobalNavigationBar {
     static let shared = GlobalNavigationBar()
     
