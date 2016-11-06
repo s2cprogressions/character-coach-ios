@@ -15,6 +15,7 @@
 		D95F36951DCE57230078194A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95F36911DCE57230078194A /* LaunchScreen.storyboard */; };
 		D95F36961DCE57230078194A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95F36931DCE57230078194A /* Main.storyboard */; };
 		D95F369C1DCE7D080078194A /* GlobalNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95F369B1DCE7D080078194A /* GlobalNavigationBar.swift */; };
+		D95F369E1DCF91450078194A /* DummyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95F369D1DCF91450078194A /* DummyNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		D95F36921DCE57230078194A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CharacterCoach/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		D95F36941DCE57230078194A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CharacterCoach/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		D95F369B1DCE7D080078194A /* GlobalNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalNavigationBar.swift; path = CharacterCoach/GlobalNavigationBar.swift; sourceTree = SOURCE_ROOT; };
+		D95F369D1DCF91450078194A /* DummyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DummyNavigationController.swift; path = CharacterCoach/DummyNavigationController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				D95F36891DCE57020078194A /* Assets.xcassets */,
 				D95F368B1DCE57020078194A /* Info.plist */,
 				D95F369B1DCE7D080078194A /* GlobalNavigationBar.swift */,
+				D95F369D1DCF91450078194A /* DummyNavigationController.swift */,
 				D95F368C1DCE57020078194A /* ViewController.swift */,
 				D95F36911DCE57230078194A /* LaunchScreen.storyboard */,
 				D95F36931DCE57230078194A /* Main.storyboard */,
@@ -235,6 +238,7 @@
 			files = (
 				D95F369C1DCE7D080078194A /* GlobalNavigationBar.swift in Sources */,
 				D95F36901DCE57020078194A /* ViewController.swift in Sources */,
+				D95F369E1DCF91450078194A /* DummyNavigationController.swift in Sources */,
 				D95F36881DCE56F30078194A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

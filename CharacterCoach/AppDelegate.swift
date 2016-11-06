@@ -13,7 +13,7 @@ import Turbolinks
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let navigationController = UINavigationController()
+    let navigationController = DummyNavigationController()
     
     var session = Session()
 
