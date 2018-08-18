@@ -15,5 +15,5 @@ class GlobalNavigationBar {
     
     // currently set to the default (blue) color, this will change
     // to the navigation bar color that's current when loaded
-    var tintColor: UIColor = UIColor(colorLiteralRed: 255.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0)
+    var tintColor: UIColor = UIColor(colorLiteralRed: 97.0/255.0, green: 125.0/255.0, blue: 136.0/255.0, alpha: 1.0)
 }
